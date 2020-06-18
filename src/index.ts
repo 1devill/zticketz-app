@@ -1,9 +1,10 @@
 const express = require('express');
 
 const app = express();
+const PORT = process.env.PORT || 1111;
 
 app.get('/', (req, res) => {
-    res.send('You entered root route');
+    res.send('Hello from Daniel!');
 })
 
-app.listen(1111);
+app.listen(PORT);
